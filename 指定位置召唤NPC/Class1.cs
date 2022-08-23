@@ -87,7 +87,7 @@ namespace TestPlugin
                 }
                 catch
                 {
-                    int index = NPC.NewNPC(null, x2, y2, 1);
+                    int index = NPC.NewNPC(null, x2, y2, n2);
                     NetMessage.SendData((byte)PacketTypes.NpcUpdate, -1, -1, null, index);
                     args.Player.SendSuccessMessage("已在" + x + "," + y + "召唤1个" + n2);
                     return;
